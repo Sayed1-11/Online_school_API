@@ -29,7 +29,6 @@ PyRect
 pyscreenshot
 PyScreeze
 pytweening
-pytz.post1
 setuptools
 sqlparse
 typing_extensions
