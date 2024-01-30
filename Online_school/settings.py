@@ -25,11 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",  # Add the origin of your frontend
-]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -61,7 +59,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Online_school.urls'
-
+CSRF_TRUSTED_ORIGINS = ['https://online-school-igar.onrender.com',"https://*.127.0.0.1"]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
